@@ -61,7 +61,7 @@ export default {
         })
     },
     post_data: function() {
-      axios.post('http://192.168.140.21:5000/login', {
+      axios.post('http://192.168.0.129:5000/login', {
         news: this.textarea1
       })
         .then(response => {

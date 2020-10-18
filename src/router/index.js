@@ -96,6 +96,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/lda',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/lda/index'),
+        name: 'LDA',
+        meta: { title: 'LDA', icon: 'documentation', affix: true }
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
